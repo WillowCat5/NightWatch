@@ -6,7 +6,7 @@ This game is a training used to teach students JavaScript and HTML animation usi
 
 First fork the repository to your own account, then clone it to your computer using `git`.
 
-Before you can run the server, you need to install its dependencies. Go into the `gameserver` directory (on the command line) and type `node install`.
+Before you can run the server, you need to install its dependencies. Go into the `gameserver` directory (on the command line) and type `npm install`.
 
 ## To Play
 
