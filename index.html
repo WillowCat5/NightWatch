@@ -66,6 +66,8 @@
                 uuid: myUUID,
                 x: myGamePiece.x,
                 y: myGamePiece.y,
+                speedX: myGamePiece.speedX,
+                speedY: myGamePiece.speedY,
                 color: myColor
             });
         })
@@ -91,7 +93,7 @@
                 gamePieces[data.uuid].speedX = data.speedX;
                 gamePieces[data.uuid].speedY = data.speedY;
             } else {
-                gamePieces[data.uuid] = new component(pieceWidth, pieceHeight, data.color, data.x, data.y);
+                gamePieces[data.uuid] = new component(pieceWidth, pieceHeight, data.color, data.x, data.y, data.speedX, data.speedY);
             }
             // socket.emit('moved')
         });
@@ -193,6 +195,8 @@
                 uuid: myUUID,
                 x: gamePieces[myUUID].x,
                 y: gamePieces[myUUID].y,
+                speedX: gamePieces[myUUID].speedX,
+                speedY: gamePieces[myUUID].speedY,
                 color: myColor
             });
         }
